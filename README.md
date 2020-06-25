@@ -44,7 +44,7 @@ Bardzo możliwe, że mogło być lepiej, ale z powodu upływającego czasu wola�
 Do transfer learningu wykorzystałem sieć [ResNet18](https://pytorch.org/hub/pytorch_vision_resnet/), która była już pre-trenowana na 1000 klasach obiektów. <br>
 Na cele zadania należało jedynie wykorzystać już nabytą przez model wiedzę na temat odróżniania kształtów i lekko "douczyć", aby mógł poprawnie klasyfikować nasz zbiór. <br>
 W tym celu stworzyłem nowy klasyfikator, który zastąpi już istniejący. Nowy klasyfikator to głębokie sieci neuronowe o 4 warstwach, z czego jedna to output. <br>
-Dodatkowo zablokowałem cały model poza 2 ostatnimi warstwami oraz warstwami typu BatchNorm, aby model mógł się jeszzcze bardziej "dostroić" do naszego datasetu. <br>
+Dodatkowo zablokowałem cały model poza 2 ostatnimi warstwami oraz warstwami typu BatchNorm, aby model mógł się jeszcze bardziej "dostroić" do naszego datasetu. <br>
 Zablokowanie pozostałych warstw pozwoli na naukę na małym zbiorze danych, utrudni wystąpienie zjawiska overfittingu. <br>
 Eksperymentalnie dowiedziałem się, że ten model nie wymaga już aż tak agresywnego podejścia w odmentacji danych, więc wykorzystałem bezpieczniejsze i łagodniejsze podejście. <br>
 Input modelu był wielkości 224x224, więc należało zmniejszyć zdjęcia przed procesem nauki. Z powodu większego rozmiaru musiałem zmniejszyć batch_size do 32 zdjęć.<br><br>
