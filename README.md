@@ -41,7 +41,7 @@ Sieć klasyfikuje jedzenie na 20 klas z dokładnością **60%**<br>
 Sieć klasyfikuje jedzenie na 2 klasy po mapowaniu z dokładnością **83%**<br><br>
 Bardzo możliwe, że mogło być lepiej, ale z powodu upływającego czasu wolałem przejść na coś bardziej pewnego - transfer learning.
 ### **WITH_RESNET**
-Do transfer learningu wykorzystałem sieć [ResNet18](https://pytorch.org/hub/pytorch_vision_resnet/), który był już pre-trenowany na 1000 klasach obiektów. <br>
+Do transfer learningu wykorzystałem sieć [ResNet18](https://pytorch.org/hub/pytorch_vision_resnet/), która była już pre-trenowana na 1000 klasach obiektów. <br>
 Na cele zadania należało jedynie wykorzystać już nabytą przez model wiedzę na temat odróżniania kształtów i lekko "douczyć", aby mógł poprawnie klasyfikować nasz zbiór. <br>
 W tym celu stworzyłem nowy klasyfikator, który zastąpi już istniejący. Nowy klasyfikator to głębokie sieci neuronowe o 4 warstwach, z czego jedna to output. <br>
 Dodatkowo zablokowałem cały model poza 2 ostatnimi warstwami oraz warstwami typu BatchNorm, aby model mógł się jeszzcze bardziej "dostroić" do naszego datasetu. <br>
