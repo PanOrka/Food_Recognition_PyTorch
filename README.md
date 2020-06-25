@@ -52,7 +52,7 @@ Input modelu był wielkości 224x224, więc należało zmniejszyć zdjęcia prze
 ![epoch img](./with_resnet/epoch.png)<br>
 ![train_loss](./with_resnet/train_loss.png)<br>
 ![valid_loss](./with_resnet/valid_loss.png)<br>
-Najlepszy val_loss był dokładnie w 47 epochu. Na repozytorium znajduje się model właśnie z tego momentu.<br><br>
+Najlepszy val_loss był dokładnie w 46 epochu. Na repozytorium znajduje się model właśnie z tego momentu.<br><br>
 Po skorzystaniu z ResNeta udało się otrzymać całkiem dobry loss oraz accuracy. <br>
 Sieć klasyfikuje jedzenie na 20 klas z dokładnością **84.25%**<br>
 Sieć klasyfikuje jedzenie na 2 klasy po mapowaniu z dokładnością **95.25%**
